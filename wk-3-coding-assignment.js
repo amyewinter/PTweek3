@@ -29,7 +29,7 @@ for (var i = 0; i < names.length; i++) {
 //printing average to console (3.833)
 console.log(nTotal / names.length);
 
-//Step 2b - concatenating values in names
+//Step 2b - concatenating names
 var nString = "";
 for (var i = 0; i < names.length; i++) {
   nString += names[i] + " ";
@@ -101,7 +101,7 @@ function willBuyDrink(isHotOutside, moneyInPocket) {
   return isHotOutside && moneyInPocket > 10.5;
 }
 
-//Step 13 - original function selects at random from a set of answers to a question.  I love the Magic 8 Ball; who doesn't need a little guidance now and then?
+//Step 13 - original function selects at random from a set of answers to a supplied question.  (The question is ignored.)  I love the Magic 8 Ball; who doesn't need a little guidance now and then?
 function magic8Ball(question) {
   var eightBallAnswers = [
     "It is certain.",
@@ -152,3 +152,4 @@ console.log(willBuyDrink(false, 11));
 
 //Step 13 - should return random statement from array
 console.log(magic8Ball("Will it rain today?"));
+
